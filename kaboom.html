@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaboom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left">
+            <div class="image">
+                <img src="kaboom.png" alt="loading">
+            </div>
+
+            <div class="circle">
+                <div class="lowblack"></div>
+                <div class="black" id="dark_theme">
+                </div>
+                <div class="white" id="white_c"></div>
+            </div>
+            <div class="list">
+                <div class="li">
+                    <a href="#">PlayGround</a>
+                </div>
+                <div class="li">
+                    <a href="#">Tutorial</a>
+                </div>
+                <div class="li">
+                    <a href="#">Blog</a>
+                </div>
+                <div class="li">
+                    <a href="#">Github</a>
+                </div>
+                <div class="li">
+                    <a href="#">Discord</a>
+                </div>
+                <div class="li">
+                    <input class="search" type="text" placeholder="Search in doc" class="search_doc" id="search_doc">
+                </div>
+                <div class="li">
+                    <a href="#">Start</a>
+                </div>
+                <div class="li">
+                    <a href="#">kaboom()</a>
+                </div>
+                <div class="li">
+                    <a href="#" style="color:rgb(118, 110, 110);">Game</a>
+                </div>
+                <div class="li">
+                    <a href="#">add()</a>
+                </div>
+                <div class="li">
+                    <a href="#">get()</a>
+                </div>
+                <div class="li">
+                    <a href="#">every()</a>
+                </div>
+                <div class="li">
+                    <a href="#">reevery()</a>
+                </div>
+                <div class="li">
+                    <a href="#">readd()</a>
+                </div>
+                <div class="li">
+                    <a href="#">readd()</a>
+                </div>
+                <div class="li">
+                    <a href="#">distory()</a>
+                </div>
+                <div class="li">
+                    <a href="#">distoryAll()</a>
+                </div>
+                <div class="li">
+                    <a href="#" style="color:rgb(133, 128, 119);">components</a>
+                </div>
+                <div class="li">
+                    <a href="#">pos()</a>
+                </div>
+                <div class="li">
+                    <a href="#">scale()</a>
+                </div>
+                <div class="li">
+                    <a href="#">rotate()</a>
+                </div>
+                <div class="li">
+                    <a href="#">color()</a>
+                </div>
+                <div class="li">
+                    <a href="#">opacity()</a>
+                </div>
+                <div class="li">
+                    <a href="#">sprite()</a>
+                </div>
+                <div class="li">
+                    <a href="#">text()</a>
+                </div>
+                <div class="li">
+                    <a href="#">text()</a>
+                </div>
+                <div class="li">
+                    <a href="#">react()</a>
+                </div>
+                <div class="li">
+                    <a href="#">circle()</a>
+                </div>
+                <div class="li">
+                    <a href="#">uvquad()</a>
+                </div>
+                <div class="li">
+                    <a href="#">area()</a>
+                </div>
+                <div class="li">
+                    <a href="#">z()</a>
+                </div>
+                <div class="li">
+                    <a href="#">outline()</a>
+                </div>
+                <div class="li">
+                    <a href="#">body()</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Kaboom is a Javascript game programming library that helps you make games fast and fun.</h1>
+            <div class="inside_div">
+                <span class="content">
+                
+                <p>  // start the game</p>
+                   kaboom()
+                
+                    <p>// load a default sprite</p>
+                
+                    loadBean()
+                  <p>// add character to screen from a lost of components</p>  
+                    
+                    const player=add([
+                    <br>
+                    sprite("bean"),    // renders as a sprite <br>
+                    pos(120,80),       // position in world <br>
+                    area(),            // has a collider  <br>
+                    body(),            // responds to phyics and gravity
+                // jump when player presses "space key"
+              
+                    onKeyPress("space",() =>{
+                    <br>
+                    // . jump() is provided by the body() compenent
+                    <br>
+                    player.jump()
+                   })
+                    ])
+
+
+
+
+
+
+                    <p>// add character to screen from a lost of components</p>  
+                    
+                    const player=add([
+                    <br>
+                    sprite("bean"),    // renders as a sprite <br>
+                    pos(120,80),       // position in world <br>
+                    area(),            // has a collider  <br>
+                    body(),            // responds to phyics and gravity
+                // jump when player presses "space key"
+              
+                    onKeyPress("space",() =>{
+                    <br>
+                    // . jump() is provided by the body() compenent
+                    <br>
+                    player.jump()
+                   })
+                    ])
+                    // start the game
+                    kaboom()
+                    
+                    // load a default sprite
+                    loadBean()
+                    
+                    // add character to screen, from a list of components
+                    const player = add([
+                        sprite("bean"),  // renders as a sprite
+                        pos(120, 80),    // position in world
+                        area(),          // has a collider
+                        body(),          // responds to physics and gravity
+                    ])
+                    
+                    // jump when player presses "space" key
+                    onKeyPress("space", () => {
+                        // .jump() is provided by the body() component
+                        player.jump()
+                    })
+                    Play with it yourself or check out the examples in the Playground!
+                    
+                    kaboom(options?: KaboomOpt)
+                    Initialize kaboom context. The starting point of all kaboom games.
+                    // Start kaboom with default options (will create a fullscreen canvas under <body>)
+                    kaboom()
+                    
+                    // Init with some options (check out #KaboomOpt for full options list)
+                    kaboom({
+                        width: 320,
+                        height: 240,
+                        font: "sinko",
+                        canvas: document.querySelector("#mycanvas"),
+                        background: [ 0, 0, 255, ],
+                    })
+                    
+                    // All kaboom functions are imported to global after calling kaboom()
+                    add()
+                    onUpdate()
+                    onKeyPress()
+                    vec2()
+                    
+                    // If you want to prevent kaboom from importing all functions to global and use a context handle for all kaboom functions
+                    const k = kaboom({ global: false })
+                    
+                    k.add(...)
+                    k.onUpdate(...)
+                    k.onKeyPress(...)
+                    k.vec2(...)
+                    Game Object is the basic unit of entity in a kaboom world. Everything is a game object, the player, a butterfly, a tree, or even a piece of text.
+                    
+                    This section contains functions to add, remove, and access game objects. To actually make them do stuff, check out the Components section.
+                    
+                    add(comps: CompList<T>) => GameObj<T>
+                    Assemble a game object from a list of components, and add it to the game
+                    The added game object that contains all properties and methods each component offers.
+                    const player = add([
+                        // List of components, each offers a set of functionalities
+                        sprite("mark"),
+                        pos(100, 200),
+                        area(),
+                        body(),
+                        health(8),
+                        doubleJump(),
+                        // Plain strings are tags, a quicker way to let us define behaviors for a group
+                        "player",
+                        "friendly",
+                        // Components are just plain objects, you can pass an object literal as a component.
+                        {
+                            dir: LEFT,
+                            dead: false,
+                            speed: 240,
+                        },
+                    ])
+                    
+                    // .jump is provided by body()
+                    player.jump()
+                    
+                    // .moveTo is provided by pos()
+                    player.moveTo(300, 200)
+                    
+                    // .onUpdate() is on every game object, it registers an event that runs every frame
+                    player.onUpdate(() => {
+                        // .move() is provided by pos()
+                        player.move(player.dir.scale(player.speed))
+                    })
+                    
+                    // .onCollide is provided by area()
+                    player.onCollide("tree", () => {
+                        destroy(player)
+                    })
+                    get(tag?: Tag | Tag[]) => GameObj[]
+                    Get a list of all game objs with certain tag.
+                    // get a list of all game objs with tag "bomb"
+                    const allBombs = get("bomb")
+                    
+                    // without args returns all current objs in the game
+                    const allObjs = get()
+                    every(tag: Tag | Tag[], action: (obj: GameObj) => T)
+                    Run callback on every game obj with certain tag.
+                    // Destroy all game obj with tag "fruit"
+                    every("fruit", destroy)
+                    every(action: (obj: GameObj) => T)
+                    Run callback on every game obj.
+                    every((obj) => {})
+                    revery(tag: Tag | Tag[], action: (obj: GameObj) => T)
+                    Run callback on every game obj with certain tag in reverse order.
+                    revery(action: (obj: GameObj) => T)
+                    Run callback on every game obj in reverse order.
+                    readd(obj: GameObj) => GameObj
+                    Remove and re-add the game obj.
+                    // mainly useful when you want to make something to draw on top
+                    readd(froggy)
+                    destroy(obj: GameObj)
+                    Remove the game obj.
+                    // every time froggy collides with anything with tag "fruit", remove it
+                    froggy.onCollide("fruit", (fruit) => {
+                        destroy(fruit)
+                    })
+                    destroyAll(tag: Tag)
+                    Remove all game objs with certain tag.
+                    // destroy all objects with tag "bomb" when you click one
+                    onClick("bomb", () => {
+                        destroyAll("bomb")
+                    })
+                    Kaboom uses a flexible component system which values composition over inheritence. Each game object is composed from a list of components, each component gives the game object certain capabilities.
+                    
+                    Use add() to assemble the components together into a Game Object and add them to the world.
+                    
+                    const player = add([
+                        sprite("froggy"),
+                        pos(100, 200),
+                        area(),
+                        body(),
+                    ])
+                    
+                    // .jump() is provided by body() component
+                    player.jump()
+                    
+                    // .moveTo() is provided by pos() component
+                    player.moveTo(120, 80)
+                    
+                    // .onCollide() is provided by the area() component
+                    player.onCollide("enemy", (enemy) => {
+                        destroy(enemy)
+                        addExplosion()
+                    })
+                    To see what methods and properties a component offers, click on the type that the component function returns, e.g. PosComp, which will open a panel showing all the properties and methods it'd give the game object.
+                    
+                    To learn more about how components work or how to make your own component, check out the component demo.
+                    
+                    pos(x: number, y: number) => PosComp
+                    Position
+                    // This game object will draw a "froggy" sprite at (100, 200)
+                    add([
+                        pos(100, 200),
+                        sprite("froggy"),
+                    ])
+                    pos(xy: number) => PosComp
+                    pos(p: Vec2) => PosComp
+                    pos() => PosComp
+                    scale(x: number, y: number) => ScaleComp
+                    Scale.
+                    scale(xy: number) => ScaleComp
+                    scale(s: Vec2) => ScaleComp
+                    scale() => ScaleComp
+                    rotate(a: number) => RotateComp
+                    Rotation (in degrees). (This doesn't work with the area() collider yet)
+                    color(r: number, g: number, b: number) => ColorComp
+                    Sets color (rgb 0-255).
+                    // blue frog
+                    add([
+                        sprite("froggy"),
+                        color(0, 0, 255)
+                    ])
+                    color(c: Color) => ColorComp
+                    color() => ColorComp
+                    opacity(o?: number) => OpacityComp
+                    Sets opacity (0.0 - 1.0).
+                    sprite(spr: string | SpriteData, options?: SpriteCompOpt) => SpriteComp
+                    Render as a sprite.
+                    // minimal setup
+                    add([
+                        sprite("froggy"),
+                    ])
+                    
+                    // with options
+                    const froggy = add([
+                        sprite("froggy", {
+                            // start with animation "idle"
+                            anim: "idle",
+                        }),
+                    ])
+                    
+                    // play / stop an anim
+                    froggy.play("jump")
+                    froggy.stop()
+                    
+                    // manually setting a frame
+                    froggy.frame = 3
+                    text(txt: string, options?: TextCompOpt) => TextComp
+                    Render as text.
+                    // a simple score counter
+                    const score = add([
+                        text("Score: 0"),
+                        pos(24, 24),
+                        { value: 0 },
+                    ])
+                    
+                    player.onCollide("coin", () => {
+                        score.value += 1
+                        score.text = "Score:" + score.value
+                    })
+                    
+                    // with options
+                    add([
+                        pos(24, 24),
+                        text("ohhi", {
+                            size: 48, // 48 pixels tall
+                            width: 320, // it'll wrap to next line when width exceeds this value
+                            font: "sink", // there're 4 built-in fonts: "apl386", "apl386o", "sink", and "sinko"
+                        }),
+                    ])
+                    rect(w: number, h: number) => RectComp
+                    Render as a rectangle.
+                    // i don't know, could be an obstacle or something
+                    add([
+                        pos(80, 120),
+                        rect(20, 40),
+                        outline(4),
+                        area(),
+                    ])
+                    circle(radius: number) => CircleComp
+                    Render as a circle.
+                    add([
+                        pos(80, 120),
+                        circle(16),
+                    ])
+                    uvquad(w: number, h: number) => UVQuadComp
+                    Render as a UV quad.
+                    add([
+                        uvquad(width(), height()),
+                        shader("spiral"),
+                    ])
+                    area() => AreaComp
+                    Generates collider area from shape and enables collision detection.
+                    // Automatically generate area information from the shape of render
+                    const player = add([
+                        sprite("froggy"),
+                        area(),
+                    ])
+                    
+                    // Die if player collides with another game obj with tag "tree"
+                    player.onCollide("tree", () => {
+                        destroy(player)
+                        go("lose")
+                    })
+                    
+                    // Check for collision manually every frame instead of registering an event
+                    player.onUpdate(() => {
+                        if (player.isColliding(bomb)) {
+                            score += 1
+                        }
+                    })
+                    area(options: AreaCompOpt) => AreaComp
+                    Define collider area and enables collision detection.
+                    add([
+                        sprite("flower"),
+                        // Scale to 0.6 of the generated area
+                        area({ scale: 0.6 }),
+                        // If we want the area scale to be calculated from the center
+                        origin("center"),
+                    ])
+                    
+                    add([
+                        sprite("froggy"),
+                        // Define custom area with width and height
+                        area({ width: 20, height: 40. }),
+                    ])
+                    origin(o: Origin | Vec2) => OriginComp
+                    Origin point for render (default "topleft").
+                    // set origin to "center" so it'll rotate from center
+                    add([
+                        rect(40, 10),
+                        rotate(45),
+                        origin("center"),
+                    ])
+                    layer(l: string) => LayerComp
+                    Which layer this object belongs to.
+                    z(z: number) => ZComp
+                    Determines the draw order for objects on the same layer. Object will be drawn on top if z value is bigger.
+                    outline(width?: number, color?: Color) => OutlineComp
+                    Give obj an outline.
+                    body(options?: BodyCompOpt) => BodyComp
+                    Physical body that responds to gravity. Requires "area" and "pos" comp. This also makes the object "solid".
+                    // froggy jumpy
+                    const froggy = add([
+                        sprite("froggy"),
+                        // body() requires "pos" and "area" component
+                        pos(),
+                        area(),
+                        body(),
+                    ])
+                    
+                    // when froggy is grounded, press space to jump
+                    // check out #BodyComp for more methods
+                    onKeyPress("space", () => {
+                        if (froggy.isGrounded()) {
+                            froggy.jump()
+                        }
+                    })
+                    
+                    // run something when froggy falls and hits a ground
+                    froggy.onGround(() => {
+                        debug.log("oh no!")
+                    })
+                    solid() => SolidComp
+                    Make other objects cannot move pass. Requires "area" comp.
+                    add([
+                        sprite("rock"),
+                        pos(30, 120),
+                        area(),
+                        solid(),
+                    ])
+                    
+                    // only do collision checking when a block is close to player for performance
+                    onUpdate("block", (b) => {
+                        b.solid = b.pos.dist(player.pos) <= 64
+                    })
+                    move(direction: number | Vec2, speed: number) => MoveComp
+                    Move towards a direction infinitely, and destroys when it leaves game view. Requires "pos" comp.
+                    // enemy throwing feces at player
+                    const projectile = add([
+                        sprite("feces"),
+                        pos(enemy.pos),
+                        area(),
+                        move(player.pos.angle(enemy.pos), 1200),
+                        cleanup(),
+                    ])
+                    outview(opt?: OutviewCompOpt) => OutviewComp
+                    Control the behavior of object when it goes out of view.
+                    v2000.2
+                    add([
+                        pos(1200, 80),
+                        outview({ hide: true, pause: true }),
+                    ])
+                    cleanup(opt?: CleanupCompOpt) => CleanupComp
+                    destroy() the object if it goes out of screen. Optionally specify the amount of time it has to be off-screen before removal.
+                    // destroy when it leaves screen
+                    const bullet = add([
+                        pos(80, 80),
+                        move(LEFT, 960),
+                        cleanup(),
+                    ])
+                    cleanup(delay?: number) => CleanupComp
+                    v2000.2 Use cleanup() with optional CleanupCompOpt instead of single time argument.
+                    follow(obj: GameObj | null, offset?: Vec2) => FollowComp
+                    Follow another game obj's position.
+                    shader(id: string) => ShaderComp
+                    Custom shader.
+                    timer(n?: number, action?: () => void) => TimerComp
+                    Run certain action after some time.
+                    fixed() => FixedComp
+                    Make object unaffected by camera or parent object transforms, and render at last.
+                    // this will be be fixed on top left and not affected by camera
+                    const score = add([
+                        text(0),
+                        pos(12, 12),
+                        fixed(),
+                    ])
+                    stay() => StayComp
+                    Don't get destroyed on scene switch.
+                    player.onCollide("bomb", () => {
+                        // spawn an explosion and switch scene, but don't destroy the explosion game obj on scene switch
+                        add([
+                            sprite("explosion", { anim: "burst", }),
+                            stay(),
+                            lifespan(1),
+                        ])
+                        go("lose", score)
+                    })
+                    health(hp: number) => HealthComp
+                    Handles health related logic and events.
+                    const player = add([
+                        health(3),
+                    ])
+                    
+                    player.onCollide("bad", (bad) => {
+                        player.hurt(1)
+                        bad.hurt(1)
+                    })
+                     
+                    player.onCollide("apple", () => {
+                        player.heal(1)
+                    })
+                    
+                    player.on("hurt", () => {
+                        play("ouch")
+                    })
+                    
+                    // triggers when hp reaches 0
+                    player.on("death", () => {
+                        destroy(player)
+                        go("lose")
+                    })
+                    lifespan(time: number, options?: LifespanCompOpt) => LifespanComp
+                    Destroy the game obj after certain amount of time
+                    // spawn an explosion, destroy after 1 seconds, start fading away after 0.5 second
+                    add([
+                        sprite("explosion", { anim: "burst", }),
+                        lifespan(1, { fade: 0.5 }),
+                    ])
+                    state(initialState: string, stateList?: string[]) => StateComp
+                    Finite state machine.
+                    v2000.1
+                    const enemy = add([
+                        pos(80, 100),
+                        sprite("robot"),
+                        state("idle", ["idle", "attack", "move"]),
+                    ])
+                    
+                    // this callback will run once when enters "attack" state
+                    enemy.onStateEnter("attack", () => {
+                        // enter "idle" state when the attack animation ends
+                        enemy.play("attackAnim", {
+                            // any additional arguments will be passed into the onStateEnter() callback
+                            onEnd: () => enemy.enterState("idle", rand(1, 3)),
+                        })
+                        checkHit(enemy, player)
+                    })
+                    
+                    // this will run once when enters "idle" state
+                    enemy.onStateEnter("idle", (time) => {
+                        enemy.play("idleAnim")
+                        wait(time, () => enemy.enterState("move"))
+                    })
+                    
+                    // this will run every frame when current state is "move"
+                    enemy.onStateUpdate("move", () => {
+                        enemy.follow(player)
+                        if (enemy.pos.dist(player.pos) < 16) {
+                            enemy.enterState("attack")
+                        }
+                    })
+                    state(initialState: string, stateList: string[], transitions: Record<string, string | string[]>) => StateComp
+                    state() with pre-defined transitions.
+                    v2000.2
+                    const enemy = add([
+                        pos(80, 100),
+                        sprite("robot"),
+                        state("idle", ["idle", "attack", "move"], {
+                            "idle": "attack",
+                            "attack": "move",
+                            "move": [ "idle", "attack" ],
+                        }),
+                    ])
+                    
+                    // this callback will only run once when enter "attack" state from "idle"
+                    enemy.onStateTransition("idle", "attack", () => {
+                        checkHit(enemy, player)
+                    })
+                    Kaboom uses events extensively for a flat and declarative code style.
+                    
+                    For example, it's most common for a game to have something run every frame which can be achieved by adding an onUpdate() event
+                    
+                    // Make something always move to the right
+                    onUpdate(() => {
+                        banana.move(320, 0)
+                    })
+                    Events are also used for input handlers.
+                    
+                    onKeyPress("space", () => {
+                        player.jump()
+                    })
+                    Every function with the on prefix is an event register function that takes a callback function as the last argument, and should return a function that cancels the event listener.
+                    
+                    Note that you should never nest one event handler function inside another or it might cause severe performance punishment.
+                    
+                    on(event: string, tag: Tag, action: (obj: GameObj, args: ...) => void) => EventCanceller
+                    Register an event on all game objs with certain tag.
+                    // a custom event defined by body() comp
+                    // every time an obj with tag "bomb" hits the floor, destroy it and addKaboom()
+                    on("ground", "bomb", (bomb) => {
+                        destroy(bomb)
+                        addKaboom()
+                    })
+                    onUpdate(tag: Tag, action: (obj: GameObj) => void) => EventCanceller
+                    Register an event that runs every frame (~60 times per second) for all game objs with certain tag.
+                    v2000.1
+                    // move every "tree" 120 pixels per second to the left, destroy it when it leaves screen
+                    // there'll be nothing to run if there's no "tree" obj in the scene
+                    onUpdate("tree", (tree) => {
+                        tree.move(-120, 0)
+                        if (tree.pos.x < 0) {
+                            destroy(tree)
+                        }
+                    })
+                    onUpdate(action: () => void) => EventCanceller
+                    Register an event that runs every frame (~60 times per second).
+                    v2000.1
+                    // This will run every frame
+                    onUpdate(() => {
+                        debug.log("ohhi")
+                    })
+                    onDraw(tag: Tag, action: (obj: GameObj) => void) => EventCanceller
+                    Register an event that runs every frame (~60 times per second) for all game objs with certain tag (this is the same as onUpdate but all draw events are run after update events, drawXXX() functions only work in this phase).
+                    v2000.1
+                    onDraw(action: () => void) => EventCanceller
+                    Register an event that runs every frame (~60 times per second) (this is the same as onUpdate but all draw events are run after update events, drawXXX() functions only work in this phase).
+                    v2000.1
+                    onDraw(() => {
+                        drawLine({
+                            p1: vec2(0),
+                            p2: mousePos(),
+                            color: rgb(0, 0, 255),
+                        })
+                    })
+                    onLoad(action: () => void)
+                    Register an event that runs when all assets finished loading.
+                    v2000.1
+                    const froggy = add([
+                        sprite("froggy"),
+                    ])
+                    
+                    // certain assets related data are only available when the game finishes loading
+                    onLoad(() => {
+                        debug.log(froggy.width)
+                    })
+                    onCollide(t1: Tag, t2: Tag, action: (a: GameObj, b: GameObj, col?: Collision) => void) => EventCanceller
+                    Register an event that runs when 2 game objs with certain tags collides (required to have area() component).
+                    v2000.1
+                    onCollide("sun", "earth", () => {
+                        addExplosion()
+                    })
+                    onClick(tag: Tag, action: (a: GameObj) => void) => EventCanceller
+                    Register an event that runs when game objs with certain tags are clicked (required to have the area() component).
+                    v2000.1
+                    // click on any "chest" to open
+                    onClick("chest", (chest) => chest.open())
+                    onClick(action: () => void) => EventCanceller
+                    Register an event that runs when users clicks.
+                    v2000.1
+                    // click on anywhere to go to "game" scene
+                    onClick(() => go("game"))
+                    onHover(tag: Tag, action: (a: GameObj) => void) => EventCanceller
+                    Register an event that runs when game objs with certain tags are hovered (required to have area() component).
+                    v2000.1
+                    onKeyDown(k: Key | Key[], action: () => void) => EventCanceller
+                    Register an event that runs every frame when a key is held down.
+                    v2000.1
+                    // move left by SPEED pixels per frame every frame when left arrow key is being held down
+                    onKeyDown("left", () => {
+                        froggy.move(-SPEED, 0)
+                    })
+                    onKeyPress(k: Key | Key[], action: () => void) => EventCanceller
+                    Register an event that runs when user presses certain key.
+                    v2000.1
+                    // .jump() once when "space" is just being pressed
+                    onKeyPress("space", () => {
+                        froggy.jump()
+                    })
+                    onKeyPress(action: () => void) => EventCanceller
+                    Register an event that runs when user presses any key.
+                    v2000.1
+                    // Call restart() when player presses any key
+                    onKeyPress(() => {
+                        restart()
+                    })
+                    onKeyPressRepeat(k: Key | Key[], action: () => void) => EventCanceller
+                    Register an event that runs when user presses certain key (also fires repeatedly when they key is being held down).
+                    v2000.1
+                    // delete last character when "backspace" is being pressed and held
+                    onKeyPressRepeat("backspace", () => {
+                        input.text = input.text.substring(0, input.text.length - 1)
+                    })
+                    onKeyPressRepeat(action: () => void) => EventCanceller
+                    onKeyRelease(k: Key | Key[], action: () => void) => EventCanceller
+                    Register an event that runs when user releases certain key.
+                    v2000.1
+                    onKeyRelease(action: () => void) => EventCanceller
+                    onCharInput(action: (ch: string) => void) => EventCanceller
+                    Register an event that runs when user inputs text.
+                    v2000.1
+                    // type into input
+                    onCharInput((ch) => {
+                        input.text += ch
+                    })
+                    onMouseDown(action: (pos: Vec2) => void) => EventCanceller
+                    Register an event that runs every frame when a mouse button is being held down.
+                    v2000.1
+                    onMouseDown(button: MouseButton, action: (pos: Vec2) => void) => EventCanceller
+                    onMousePress(action: (pos: Vec2) => void) => EventCanceller
+                    Register an event that runs when user clicks mouse.
+                    v2000.1
+                    onMousePress(button: MouseButton, action: (pos: Vec2) => void) => EventCanceller
+                    onMouseRelease(action: (pos: Vec2) => void) => EventCanceller
+                    Register an event that runs when user releases mouse.
+                    v2000.1
+                    onMouseRelease(button: MouseButton, action: (pos: Vec2) => void) => EventCanceller
+                    onMouseMove(action: (pos: Vec2) => void) => EventCanceller
+                    Register an event that runs whenever user move the mouse.
+                    v2000.1
+                    onTouchStart(action: (id: TouchID, pos: Vec2) => void) => EventCanceller
+                    Register an event that runs when a touch starts.
+                    v2000.1
+                    onTouchMove(action: (id: TouchID, pos: Vec2) => void) => EventCanceller
+                    Register an event that runs whenever touch moves.
+                    v2000.1
+                    onTouchEnd(action: (id: TouchID, pos: Vec2) => void) => EventCanceller
+                    Register an event that runs when a touch ends.
+                    v2000.1
+                    action: KaboomCtx["onUpdate"]
+                    v2000.1 Use onUpdate() instead
+                    render: KaboomCtx["onDraw"]
+                    v2000.1 Use onDraw() instead
+                    ready: KaboomCtx["onLoad"]
+                    v2000.1 Use onLoad() instead.
+                    collides: KaboomCtx["onCollide"]
+                    v2000.1 Use onCollide() instead
+                    clicks: KaboomCtx["onClick"]
+                    v2000.1 Use onClick() instead
+                    hovers: KaboomCtx["onHover"]
+                    v2000.1 Use onHover() instead
+                    keyDown: KaboomCtx["onKeyDown"]
+                    v2000.1 Use onKeyDown() instead.
+                    keyPress: KaboomCtx["onKeyPress"]
+                    v2000.1 Use onKeyPress() instead.
+                    keyPressRep: KaboomCtx["onKeyPressRepeat"]
+                    v2000.1 Use onKeyPressRepeat() instead.
+                    keyRelease: KaboomCtx["onKeyRelease"]
+                    v2000.1 Use onKeyRelease() instead.
+                    charInput: KaboomCtx["onCharInput"]
+                    v2000.1 Use onCharInput() instead.
+                    mouseClick: KaboomCtx["onMousePress"]
+                    v2000.1 Use onClick() or onMousePress() instead.
+                    mouseRelease: KaboomCtx["onMouseRelease"]
+                    v2000.1 Use onMouseRelease() instead.
+                    mouseDown: KaboomCtx["onMouseDown"]
+                    v2000.1 Use onMouseDown() instead.
+                    mouseMove: KaboomCtx["onMouseMove"]
+                    v2000.1 Use onMouseMove() instead.
+                    touchStart: KaboomCtx["onTouchStart"]
+                    v2000.1 Use onTouchStart() instead.
+                    touchMove: KaboomCtx["onTouchMove"]
+                    v2000.1 Use onTouchMove() instead.
+                    touchEnd: KaboomCtx["onTouchEnd"]
+                    v2000.1 Use onTouchEnd() instead.
+                    Every function with the load prefix is an async function that loads something into the asset manager, and should return a promise that resolves upon load complete.
+                    
+                    loadRoot(path?: string) => string
+                    Sets the root for all subsequent resource urls.
+                    loadRoot("https://myassets.com/")
+                    loadSprite("froggy", "sprites/froggy.png") // will resolve to "https://myassets.com/sprites/frogg.png"
+                    loadSprite(id: string | null, src: SpriteLoadSrc, options?: SpriteLoadOpt) => Promise<SpriteData>
+                    Load a sprite into asset manager, with name and resource url and optional config.
+                    // due to browser policies you'll need a static file server to load local files
+                    loadSprite("froggy", "froggy.png")
+                    loadSprite("apple", "https://kaboomjs.com/sprites/apple.png")
+                    
+                    // slice a spritesheet and add anims manually
+                    loadSprite("froggy", "froggy.png", {
+                        sliceX: 4,
+                        sliceY: 1,
+                        anims: {
+                            run: {
+                                from: 0,
+                                to: 3,
+                            },
+                            jump: {
+                                from: 3,
+                                to: 3,
+                            },
+                        },
+                    })
+                    loadSpriteAtlas(src: SpriteLoadSrc, data: SpriteAtlasData) => Promise<Record<string, SpriteData>>
+                    Load sprites from a sprite atlas.
+                    // See #SpriteAtlasData type for format spec
+                    loadSpriteAtlas("sprites/dungeon.png", {
+                        "hero": {
+                            x: 128,
+                            y: 68,
+                            width: 144,
+                            height: 28,
+                            sliceX: 9,
+                            anims: {
+                                idle: { from: 0, to: 3 },
+                                run: { from: 4, to: 7 },
+                                hit: 8,
+                            },
+                        },
+                    })
+                    
+                    const player = add([
+                        sprite("hero"),
+                    ])
+                    
+                    player.play("run")
+                    loadSpriteAtlas(src: SpriteLoadSrc, url: string) => Promise<Record<string, SpriteData>>
+                    Load sprites from a sprite atlas with URL.
+                    // Load from json file, see #SpriteAtlasData type for format spec
+                    loadSpriteAtlas("sprites/dungeon.png", "sprites/dungeon.json")
+                    
+                    const player = add([
+                        sprite("hero"),
+                    ])
+                    
+                    player.play("run")
+                    loadAseprite(name: string | null, imgSrc: SpriteLoadSrc, jsonSrc: string) => Promise<SpriteData>
+                    Load a sprite with aseprite spritesheet json.
+                    loadAseprite("car", "sprites/car.png", "sprites/car.json")
+                    loadPedit(name: string, src: string) => Promise<SpriteData>
+                    loadBean(name?: string) => Promise<SpriteData>
+                    Load default sprite "bean".
+                    loadBean()
+                    
+                    // use it right away
+                    add([
+                        sprite("bean"),
+                    ])
+                    loadSound(id: string, src: string) => Promise<SoundData>
+                    Load a sound into asset manager, with name and resource url.
+                    loadSound("shoot", "horse.ogg")
+                    loadSound("shoot", "https://kaboomjs.com/sounds/scream6.mp3")
+                    loadFont(id: string, src: string, gridWidth: number, gridHeight: number, options?: FontLoadOpt) => Promise<FontData>
+                    Load a bitmap font into asset manager, with name and resource url and infomation on the layout of the bitmap.
+                    // load a bitmap font called "04b03", with bitmap "fonts/04b03.png"
+                    // each character on bitmap has a size of (6, 8), and contains default ASCII_CHARS
+                    loadFont("04b03", "fonts/04b03.png", 6, 8)
+                    
+                    // load a font with custom characters
+                    loadFont("cp437", "cp437.png", 6, 8, {chars: "☺☻♥♦♣♠"})
+                    loadShader(name: string, vert?: string, frag?: string, isUrl?: boolean) => Promise<ShaderData>
+                    Load a shader into asset manager with vertex and fragment code / file url.
+                    // load only a fragment shader from URL
+                    loadShader("outline", null, "/shaders/outline.glsl", true)
+                    
+                    // default shaders and custom shader format
+                    loadShader("outline",
+                        `vec4 vert(vec3 pos, vec2 uv, vec4 color) {
+                        // predefined functions to get the default value by kaboom
+                        return def_vert()
+                    }`,
+                    `vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
+                        // turn everything blue-ish
+                        return def_frag() * vec4(0, 0, 1, 1)
+                    }`, false)
+                    load(l: Promise<T>)
+                    Add a new loader to wait for before starting the game.
+                    load(new Promise((resolve, reject) => {
+                        // anything you want to do that stalls the game in loading state
+                        resolve("ok")
+                    }))
+                    width() => number
+                    Get the width of game.
+                    height() => number
+                    Get the height of game.
+                    center() => Vec2
+                    Get the center point of view.
+                    // add froggy to the center of the screen
+                    add([
+                        sprite("froggy"),
+                        pos(center()),
+                        // ...
+                    ])
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

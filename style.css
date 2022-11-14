@@ -1,0 +1,226 @@
+:root {
+    --black-color: white;
+    --white-color: black;
+}
+
+.main {
+    /* margin: 14px 14px; */
+    border: 2px solid rgb(63, 60, 60);
+    width: 100%;
+    border-radius: 8px;
+    height: 90vh;
+    display: flex;
+}
+
+body {
+    background-color: var(--white-color);
+    margin: 0;
+    overflow-y: hidden;
+    height: 100%;
+    padding: 24px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: rgb(127, 121, 121);
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.left {
+    width: 20%;
+    height: 90vh;
+    background-color: var(--white-color);
+    overflow-y: hidden;
+    border: 1px solid rgb(63, 60, 60);
+    border-radius: 4px;
+}
+
+.left:hover {
+    overflow-y: auto;
+}
+
+.right {
+    width: 86%;
+    height: 80vh;
+    color: var(--black-color);
+}
+
+.right h1 {
+    margin-left: 18px;
+}
+
+.image img {
+    width: 80%;
+    height: 20vh;
+    animation: kaboom 3s ease-in-out 0.5s 4 alternate;
+    /* filter: grayscale(60%) */
+    border-radius: 100%;
+}
+
+
+/* .image {
+    animation: kaboom 3s ease-in-out 0.5s 4 alternate;
+}
+
+@keyframes kabomm {
+    from {
+        width: 30px;
+        height: 30px;
+    }
+    to {
+        width: 10vw;
+        height: 10vh;
+    } 
+}
+*/
+
+.circle {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.black {
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    color: rgb(28, 28, 28);
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.lowblack {
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    color: rgb(28, 28, 28);
+    border: 1px solid blue;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.white {
+    background-color: white;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid wheat;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.white:hover {
+    border: 2px solid rgb(43, 43, 159);
+}
+
+.lowblack:hover {
+    border: 2px solid wheat;
+}
+
+.black:hover {
+    border: 2px solid rgb(43, 43, 159);
+}
+
+.inside_div {
+    width: 90%;
+    height: 73vh;
+    border-radius: 10px;
+    border: 1px solid rgb(63, 60, 60);
+    background-color: var(--white-color);
+    margin-left: 6%;
+    color: var(--black-color);
+    overflow-y: hidden;
+}
+
+.inside_div:hover {
+    overflow-y: auto;
+}
+
+.content {
+    font-size: 22px;
+}
+
+span p {
+    color: rgb(191, 231, 217);
+}
+
+.list {
+    width: 20%;
+    height: 40vh;
+}
+
+.li a {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 26px;
+    margin-top: 55px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 45px;
+    width: 50%;
+}
+
+.li a:hover {
+    border-radius: 4px;
+    background: rgb(30 140 230);
+}
+
+.search {
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.search:hover {
+    border: 1px solid rgb(0, 136, 255);
+    border-radius: 4px;
+}
+
+.li input {
+    outline: none;
+    color: white;
+    height: 35px;
+    font-size: 16px;
+    padding: 3px 3px;
+    background: rgb(65, 63, 62);
+    border: 1px solid black;
+}
+
+.white_theme {
+    --white-color: white;
+    --black-color: black;
+}
+
+.dark_theme {
+    --black-color: white;
+    --white-color: black;
+}
